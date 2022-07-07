@@ -6,7 +6,7 @@ module.exports = function toReadable (number) {
     'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
     let tens = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
 
-    if(number === 0 && number.toString().length == 1) {
+    if(number === 0) {
         return 'zero'
     } else if(number < 20) {
         return toTwenty[number]
